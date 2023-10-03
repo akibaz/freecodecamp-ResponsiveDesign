@@ -1,0 +1,20 @@
+.canvas {
+    width: 500px;
+    height: 600px;
+    background-color: burlywood;
+    overflow: hidden;
+}
+
+.frame {
+    width: 500px;
+    border: 50px solid black;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.one {
+    width: 425px;
+    height: 150px;
+    background-color: brown;
+    margin: 20px auto;
+}
