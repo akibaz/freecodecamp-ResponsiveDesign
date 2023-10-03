@@ -11,8 +11,57 @@
             <p class="description">Please fill out the required data in order to improve our platform</p>
         <div class="survey-form">
             <form action="" method="post">
-                <label for="name">Name<input type="text" id="name" name="name" placeholder="Enter your name">
+                <label for="name">Name
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
                 </label>
+
+                <label for="email">Email
+                    <input type="text" id="email" name="email" placeholder="Enter your email" required>
+                </label>
+
+                <label for="age">Age (optional)
+                    <input type="number" id="age" name="age" placeholder="What is your age?">
+                </label>
+
+                <label for="current-role">Which one best describes your current role?
+                    <select name="current-role" id="current-role">
+                        <option value="">Select role</option>
+                        <option value="job">Have Job</option>
+                        <option value="learner">I am learner</option>
+                        <option value="student">I am student</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+
+                <fieldset id="recommendation">
+                    <legend>Would you recommend our platform to a friend?</legend>
+                    <label for="recommend-definitely" class="recommendation-label">
+                        <input type="radio" id="recommend-definitely" name="recommendation" value="definitily">Definitily
+                    </label>
+                    <label for="recommend-maybe" class="recommendation-label">
+                        <input type="radio" id="recommend-maybe" name="recommendation" value="maybe">Maybe
+                    </label>
+                    <label for="recommend-likely" class="recommendation-label">
+                        <input type="radio" name="recommendation" value="likely" id="recommend-likely">Likely
+                    </label>
+                </fieldset>
+
+                <fieldset id="interests">
+                    <legend>What techologies are you interested in?</legend>
+                    <label for="backend" class="interests-label">
+                        <input type="checkbox" id="backend" name="interests" value="backend">Backend
+                    </label>
+                    <label for="interests-frontend" class="interests-label">
+                        <input type="checkbox" name="interests" id="interests-frontend" value="frontend">Frontend
+                    </label>
+                    <label for="interests-fullstack" class="interests-label">
+                        <input type="checkbox" name="interests" id="interests-fullstack" value="fullstack">Fullstack
+                    </label>
+                    <label for="interests-mobile" class="interests-label">
+                        <input type="checkbox" name="interests" id="interests-mobile" value="mobile">Mobile
+                    </label>
+                </fieldset>
+                <input type="submit" name="submit" id="submit" value="Submit">
             </form>
         </div>
     </body>
