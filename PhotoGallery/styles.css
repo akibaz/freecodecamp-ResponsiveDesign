@@ -2,8 +2,42 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f4f6f7;
+}
+
 .gallery img {
     width: 100%;
     max-width: 350px;
     height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
 }
+
+.header {
+    text-align: center;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 4px solid #fdb347;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    justify-content: center;
+    align-content: center;
+    gap: 16px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.gallery::after {
+    content: "";
+    width: 350px;
+} 
