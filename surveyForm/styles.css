@@ -11,8 +11,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     font-family: Poppins, sans-serif;
     color: #290F99;
+    padding-bottom: 2em;
 }
 
 h1, .description {
