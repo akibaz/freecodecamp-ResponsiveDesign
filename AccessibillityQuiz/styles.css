@@ -1,3 +1,9 @@
+@media(prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
 body {
     margin: 0;
     font-family: Helvetica, sans-serif;
@@ -17,11 +23,20 @@ header {
     height: 50px;
     background-color: #1b1b32;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
 }
 
 h1 {
     color: #f1be32;
     font-size: min(5vw, 1.2em);
+    text-align: center;
+}
+
+main {
+    padding-top: 50px;
 }
 
 h1, h2 {
@@ -30,6 +45,8 @@ h1, h2 {
 
 h2 {
     border-bottom: 4px solid #dfdfe2;
+    margin-top: 0;
+    padding-top: 60px;
 }
 
 
@@ -38,10 +55,31 @@ nav > ul {
     justify-content: space-evenly;
     gap: 1em;
     color: white;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
 }
 
-nav li {
-    list-style: none;
+nav > ul > li {
+    display: block;
+    margin: 0 0.2rem;
+    padding: 0.1rem;
+    color: #dfdfe2;
+}
+
+li > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav > ul > li:hover {
+    color: #1b1b32;
+    background-color: #dfdfe2;
+}
+
+.info {
+    padding: 10px 0 0 5px;
 }
 
 .sr-only {
@@ -58,4 +96,83 @@ nav li {
 
 p:before {
     content: "Question #";
+}
+
+section {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto 10px;
+}
+
+.formrow {
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+input {
+    font-size: 1rem;
+}
+
+.info > input {
+    width: 50%;
+    text-align: left;
+}
+
+.info > label {
+    width: 10%;
+    min-width: 55px;
+    text-align: right;
+}
+
+.info > label, .info > input {
+    display: inline-block;
+}
+
+.question-block {
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 5px;
+}
+
+p {
+    margin-top: 5px;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.question {
+    border: unset;
+    padding-bottom: 0;
+}
+
+.answers-list {
+    list-style: none;
+    padding: 0;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 40%;
+    margin: 40px auto;
+    padding: 15px;
+    font-size: 23px;
+    background: #d0d0d5;
+    border: 3px solid #3b3b4f;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #2a2a40;
+}
+
+footer, footer a {
+    color: #f2f3e2;
+}
+
+address {
+    text-align: center;
+    padding: 10px;
 }
