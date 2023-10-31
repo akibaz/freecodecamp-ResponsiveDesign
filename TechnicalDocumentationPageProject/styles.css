@@ -9,10 +9,10 @@ html {
 
 body {
     margin: 0;
-    background-color: #f7f7f7;
+    background-color: #fdfdfd;
 }
 
-#nav-bar {
+#navbar {
     width: 330px;
     height: 100%;
     position: fixed;
@@ -23,25 +23,27 @@ body {
 
 header {
     color: black;
-    font-size: 1.4em;
+    font-size: 1.7em;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
-#nav-bar header {
+#navbar header {
     font-size: 1.8em;
     padding: 1rem 0 0 2rem;
 }
 
-#nav-bar ul {
+#navbar ul {
     list-style: none;
     padding-left: 0;
 }
 
-#nav-bar ul li {
+#navbar ul li {
     padding: 0.7rem 0 0.7rem 2rem;
     border-top: 1px solid #a8abb9;
 }
 
-#nav-bar ul:last-child {
+#navbar ul:last-child {
     border-bottom: 1px solid #a8abb9;
 }
 
@@ -49,5 +51,44 @@ header {
     text-decoration: none;
     font-size: 1em;
     color: inherit;
+    cursor: pointer;
+    
 }
 
+#main-doc {
+    margin-left: 330px;
+    padding: 2rem;
+}
+
+.main-section article {
+    padding-left: 1rem;
+}
+
+.main-section article code {
+    /* white-space: pre-line;
+    line-height: 2rem;
+    background-color: #f7f7f7; */
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #eae6e6;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.main-section article ul {
+    padding: 1rem 3rem;
+}
+
+.main-section article ul li {
+    padding-top: 1rem;
+}
+
+.main-section article p {
+    margin-top: 20px;
+}
