@@ -19,12 +19,14 @@ body {
     overflow: hidden; /* Remove the scroll bar */
 }
 
-.background-buildings {
+.background-buildings, .foreground-buildings {
     /* By specifying widht and height this way, makes the element take the 100% of its parent */
     /* By using percentages for measure we are making our pagr responsive */
     width: 100%;
     height: 100%;
-    /* Position the buildings using flex */
+    /* Position the buildings using position and flex */
+    position: absolute;
+    top: 0;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
@@ -91,44 +93,38 @@ body {
     background-color: var(--building-color4);
 }
 
-.foreground-buildings {
-    /* We are setting it on top of the background-buildings  */
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    /* Position foreground buildings the same way as background ones */
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-}
-
 .fb1 {
     width: 10%;
     height: 60%;
+    background-color: var(--building-color4);
 }
 
 .fb2 {
     width: 10%;
     height: 40%;
+    background-color: var(--building-color3);
 }
 
 .fb3 {
     width: 10%;
     height: 35%;
+    background-color: var(--building-color1);
 }
 
 .fb4 {
     width: 8%;
     height: 45%;
+    background-color: var(--building-color1);
 }
 
 .fb5 {
     width: 10%;
-    height: 45%;
+    height: 33%;
+    background-color: var(--building-color2);
 }
 
 .fb6 {
     width: 9%;
     height: 38%;
+    background-color: var(--building-color3);
 }
