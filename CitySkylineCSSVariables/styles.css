@@ -7,8 +7,10 @@
 }
 
 * {
-    border: 1px solid black; /* Make all elements have this border */
-    box-sizing: border-box; /* All elements should not change their size by adding border */
+    /* Make all elements have this border */
+    border: 1px solid black;
+    /* All elements should not change their size by adding border */ 
+    box-sizing: border-box; 
 }
 
 body {
@@ -19,6 +21,7 @@ body {
 
 .background-buildings {
     /* By specifying widht and height this way, makes the element take the 100% of its parent */
+    /* By using percentages for measure we are making our pagr responsive */
     width: 100%;
     height: 100%;
     /* Position the buildings using flex */
@@ -86,4 +89,46 @@ body {
     height: 58%;
     /* Implement CSS Variable */
     background-color: var(--building-color4);
+}
+
+.foreground-buildings {
+    /* We are setting it on top of the background-buildings  */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    /* Position foreground buildings the same way as background ones */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.fb1 {
+    width: 10%;
+    height: 60%;
+}
+
+.fb2 {
+    width: 10%;
+    height: 40%;
+}
+
+.fb3 {
+    width: 10%;
+    height: 35%;
+}
+
+.fb4 {
+    width: 8%;
+    height: 45%;
+}
+
+.fb5 {
+    width: 10%;
+    height: 45%;
+}
+
+.fb6 {
+    width: 9%;
+    height: 38%;
 }
